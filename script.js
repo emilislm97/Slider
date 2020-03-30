@@ -2,12 +2,12 @@ let nxt = document.getElementById("next");
 let prv = document.getElementById("prev");
 let Line = document.getElementById("line");
 let Slider = {
-    sekiller: ["1.jpg", "2.jpg", "3.jpg", "basqa-mese.jpg", "mese.jpg", "odun.jpg"],
+    sekiller: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"],
 };
 let Say = Slider.sekiller.length;
-let i = 1;
+let i = 0;
 let plus = 0;
-
+Deyis(Slider.sekiller[i]);
 setInterval(change, 40);
 let time = setInterval(Next, 4000);
 
@@ -29,9 +29,10 @@ function change() {
 }
 
 function Next() {
-    if (i < Say) {
-        Deyis(Slider.sekiller[i]);
+    if (i < Say - 1) {
         i++;
+        Deyis(Slider.sekiller[i]);
+
     } else {
         i = 0;
         Deyis(Slider.sekiller[i]);
