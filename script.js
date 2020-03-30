@@ -43,8 +43,8 @@ prv.onclick = function () {
     plus = 0;
     change();
     if (i == 0) {
-        Deyis(Slider.sekiller[i]);
         i = Say - 1;
+        Deyis(Slider.sekiller[i]);
     } else {
         i--;
         Deyis(Slider.sekiller[i]);
